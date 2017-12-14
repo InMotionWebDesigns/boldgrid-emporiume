@@ -17,19 +17,18 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 
 	// Assign menus, widgets, and actions to locations in generic header template.
 	$boldgrid_framework_configs['template']['locations']['header'] = array(
-		'1' => array( '[menu]secondary' ),
-		'5' => array( '[widget]boldgrid-widget-1' ),
-		'6' => array( '[action]boldgrid_site_identity' ),
-		'7' => array( '[action]boldgrid_primary_navigation' ),
-		'8' => array( '[widget]boldgrid-widget-2' ),
-		'11' => array( '[menu]tertiary' ),
+		'5' => array( '[widget]boldgrid-widget-1' ), // social and cart links
+		'6' => array( '[action]boldgrid_site_identity' ), // logo
+		'7' => array( '[widget]boldgrid-widget-3' ), // search and contact
+		'11' => array( '[menu]primary' ), // navigation
+		'8' => array( '[widget]boldgrid-widget-2' ), // tagline
 	);
 	
 		// Assign menus, widgets, and actions to locations in generic footer template.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
-		'1' => array( '[widget]boldgrid-widget-3' ),
+		'1' => array( '[widget]boldgrid-widget-4' ),
 		'3' => array( '[menu]social' ),
-		'5' => array( '[action]boldgrid_display_contact_block' ),
+		'2' => array( '[action]boldgrid_display_contact_block' ),
 		'8' => array( '[action]boldgrid_display_attribution_links' ),
 		'11' => array( '[menu]footer_center' ),
 	);
