@@ -16,7 +16,9 @@ $configs = $boldgrid_theme_framework->get_configs();
 	<?php do_action( 'boldgrid_header_top' ); ?>
 		<div class='boldgrid-section'>
 			<div class='header-5'>
+			<div class="container">
 				<?php do_action( 'boldgrid-theme-location', 'header', '5' ); ?>
+				</div><!--.container-->
 			</div><!-- top header social and links -->
 			<div class="bgtfw <?php echo $configs['template']['pages']['global']['header']; ?>">
 			
@@ -28,11 +30,11 @@ $configs = $boldgrid_theme_framework->get_configs();
 					<div class='col-md-12 header-11'><?php do_action( 'boldgrid-theme-location', 'header', '11' ); ?></div>
 				</div><!-- navigation -->
 			</div><!-- .container -->				
-				<div class='header-8 text-center'>
-					<?php do_action( 'boldgrid-theme-location', 'header', '8' ); ?>
-				</div> <!-- header tagline -->
 
 		</div><!-- .section -->
+			<div class='header-8 text-center'>
+				<?php do_action( 'boldgrid-theme-location', 'header', '8' ); ?>
+			</div> <!-- header tagline -->
 		<div class='boldgrid-section'>
 			<?php do_action( 'boldgrid-theme-location', 'header', '13' ); ?>
 		</div>

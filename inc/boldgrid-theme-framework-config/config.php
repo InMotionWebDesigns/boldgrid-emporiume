@@ -26,11 +26,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 	
 		// Assign menus, widgets, and actions to locations in generic footer template.
 	$boldgrid_framework_configs['template']['locations']['footer'] = array(
-		'1' => array( '[widget]boldgrid-widget-4' ),
-		'3' => array( '[menu]social' ),
-		'2' => array( '[action]boldgrid_display_contact_block' ),
-		'8' => array( '[action]boldgrid_display_attribution_links' ),
-		'11' => array( '[menu]footer_center' ),
+		'1' => array( '[widget]boldgrid-widget-4' ), // menu and contact info areas
 	);
 	
 	// Remove Container ID that is targetted by navbar-toggle.
@@ -50,7 +46,7 @@ function boldgrid_theme_framework_config( $boldgrid_framework_configs ) {
 			'neutral-color' => '#ffffff',
 			'colors' => array(
 				'#000000',
-				'#000000',
+				'#fb0000',
 				'#ffffff',
 			)
 		),
